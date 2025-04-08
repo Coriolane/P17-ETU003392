@@ -1,0 +1,157 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eaf6fb; /* Fond pastel bleu très clair */
+    color: #2a3d66; /* Texte doux bleu foncé */
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* Titres */
+h2 {
+    color: #5aa9e6; /* Bleu pastel */
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #7fb8e5;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+/* Paragraphes */
+p {
+    color: #506c96;
+    margin-bottom: 15px;
+}
+
+/* Formulaire */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border: none;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(90, 169, 230, 0.3);
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    color: #2a3d66;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdd9ef;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    color: #2a3d66;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus {
+    border-color: #5aa9e6;
+    outline: none;
+}
+
+form button {
+    background-color: #5aa9e6;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+form button:hover {
+    background-color: #4a90d9;
+    transform: translateY(-2px);
+}
+
+form button:disabled {
+    background-color: #aacce8;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(90, 169, 230, 0.3);
+}
+
+th, td {
+    border: 1px solid #d0e4f2;
+    padding: 12px;
+    text-align: left;
+    color: #2a3d66;
+}
+
+th {
+    background-color: #5aa9e6;
+    color: #fff;
+    font-weight: 500;
+}
+
+tr:nth-child(even) {
+    background-color: #f5fbff;
+}
+
+tr:hover {
+    background-color: #e1f0fa;
+}
+
+/* Liens */
+a {
+    color: #5aa9e6;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4b6f80;
+    text-decoration: underline;
+}
+
+/* Messages d'erreur */
+p[style*="color: red"] {
+    background-color: #fdffe0;
+    padding: 12px;
+    border: 1px solid #d9ff9d;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: #555151;
+}
